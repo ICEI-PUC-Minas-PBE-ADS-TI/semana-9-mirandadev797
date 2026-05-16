@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Mini e-commerce</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Loja do Santinho</h1>
+    
+    <div id="controles">
+        <input id="search" type="text" placeholder="Buscar produto..."> <!-- busca-->
+        <select id="category"> <!-- Menu Categorias -->
+            <option value="Todas">Todas</option> <!-- Opção padrão -->
+        </select>
+        <button id="btnRender">Buscar produto</button> <!-- Botão para recarregar os cards -->
+    </div>
+
+    <!-- Cards de produtos-->
+    <div id="product-list"></div>
+
+    <!--Detalhes quando clicar em "Ver +" -->
+    <div id="product-details"></div>
+
+    <script src="script.js"></script> <!-- linka ao javaScript-->
     
 </body>
 </html>
