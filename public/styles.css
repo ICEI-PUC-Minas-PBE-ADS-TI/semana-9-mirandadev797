@@ -1,0 +1,170 @@
+/* importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+/* Estilo geral: */
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #98ebb1, #f3f581); /* fundo rosa e azul claro */
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0;
+}
+
+/* Título principal */
+h1 {
+    color: #7b4fa6; 
+    font-size: 3.0rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Área de controle */
+#controles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Campo de busca e select */
+#search, #category {
+    padding: 10px 16px;
+    border: 2px solid #c9a8e0;
+    border-radius: 50px; /* bem arredondado */
+    outline: none;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #555;
+    transition: border 0.3s;
+}
+
+#search:focus, #category:focus {
+    border-color: #a06cc7; /* lilás ao focar */
+}
+
+/* Botão buscar */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; /* bem arredondado */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #a06cc7; /* lilás */
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #7b4fa6; /* lilás escuro no hover */
+    transform: scale(1.05); /* pequena animação ao passar o mouse */
+}
+
+/* Lista de cards em grid */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Card */
+.card {
+    background-color: #fffde7; /* amarelinho claro */
+    border: 2px solid #f0e0a0;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* animação suave */
+}
+
+.card:hover {
+    transform: translateY(-6px); /* sobe levemente quando passar o cursor */
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Nome do produto (h2) */
+.card h2 {
+    color: #7b4fa6; /* lilás escuro */
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+/* Título curto do produto */
+.card p:first-of-type {
+    color: #a06cc7; /* lilás mais claro */
+    font-weight: 600;
+}
+
+.card-titulo { color: #a06cc7; font-weight: 600; }
+.card-preco { color: #1a5fa8; font-weight: 700; font-size: 1.1rem; }
+.card-categoria { color: #4caf85; font-weight: 600; }
+.card-estoque { color: #888; }
+
+/* Área de detalhes dentro do card */
+.detalhes-card {
+    margin-top: 10px;
+    color: #888; /* cinza médio */
+    font-size: 0.95rem;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+}
+
+/* Botões dos cards */
+.btn-detalhes, .btn-destacar {
+    margin-top: 10px;
+    margin-right: 6px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-detalhes {
+    background-color: #a06cc7;
+    color: white;
+}
+
+.btn-detalhes:hover {
+    background-color: #7b4fa6;
+    transform: scale(1.05);
+}
+
+.btn-destacar {
+    background-color: #ffd6e7; /* rosa */
+    color: #a06cc7;
+    border: 2px solid #a06cc7;
+}
+
+.btn-destacar:hover {
+    background-color: #ffb3d1;
+    transform: scale(1.05);
+}
+
+/* Destaque ao clicar em Destacar */
+.highlight {
+    border: 3px solid #a06cc7 !important;
+    background-color: #f3e5ff !important; /* lilás bem clarinho */
+    box-shadow: 0 0 15px rgba(160, 108, 199, 0.5);
+}
+
+/* Área de detalhes fixa */
+#product-details {
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.1);
+    color: #888;
+}

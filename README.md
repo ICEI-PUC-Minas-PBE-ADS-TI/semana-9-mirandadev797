@@ -4,13 +4,16 @@ Nesta atividade, será desenvolvido um programa para praticar o uso de funções
 
 ## Informações Gerais
 
-- Nome:
-- Matrícula:
+- Nome: Marina Miranda Nunes
+- Matrícula: 968137
 
 ## Prints do trabalho
 
 <<  COLOQUE A IMAGEM - TELA DE CARDS DE PRODUTOS - AQUI >>
+![page](public/images/printcards.png)
 
 <<  COLOQUE A IMAGEM - TELA DE DETALHE DO PRODUTO - AQUI >>
+![page](public/images/printVerDetalhes.png)
 
 <<  COLOQUE A IMAGEM - TELA DO CONSOLE - AQUI >>
+![console](public/images/data_id.png)
